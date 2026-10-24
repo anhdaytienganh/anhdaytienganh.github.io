@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="lp.metaTitle">Kho bài giảng · Ánh dạy Tiếng Anh</title>
+  <meta name="description" content="Kho bài giảng tiếng Anh giao tiếp A1–B2 của Ánh: giao thông, nhà hàng, du lịch, IT, phát âm IPA…">
+  <meta name="theme-color" content="#FFC93C">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Caveat:wght@600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo"><span class="logo-sun" aria-hidden="true">☀️</span> Ánh Mùa Hè</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#about" data-i18n="nav.about">Về Ánh</a></li>
+      <li><a href="index.html#process" data-i18n="nav.process">Lộ trình</a></li>
+      <li><a href="index.html#reviews" data-i18n="nav.reviews">Review</a></li>
+      <li><a href="lectures.html" data-i18n="nav.lectures">Bài giảng</a></li>
+      <li><a href="index.html#contact" data-i18n="nav.contact">Liên hệ</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" data-lang="vi" aria-pressed="true">VI</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow" data-i18n="lp.eyebrow">kho bài giảng</span>
+      <h1 data-i18n="lp.title">Tất cả bài giảng 📚</h1>
+      <p class="hero-lead" style="margin-inline:auto" data-i18n="lp.lead">Lọc theo trình độ và chủ đề, rồi chọn bài bạn thích nhất.</p>
+    </div>
+  </section>
+
+  <section class="container" style="padding-bottom:80px">
+    <div class="filters">
+      <div class="filter-row">
+        <input class="search" id="search" type="search" placeholder="Tìm bài, từ vựng…" data-i18n-placeholder="lp.search" aria-label="Search">
+      </div>
+      <div class="filter-row" id="levelFilters">
+        <span class="label" data-i18n="lp.level">Trình độ:</span>
+      </div>
+      <div class="filter-row" id="topicFilters">
+        <span class="label" data-i18n="lp.topic">Chủ đề:</span>
+      </div>
+    </div>
+    <p class="result-count" id="resultCount"></p>
+    <div class="lecture-grid" id="allLectures"></div>
+    <p class="empty" id="empty" data-i18n="lp.empty">Chưa có bài nào khớp. Thử bộ lọc khác nhé!</p>
+    <div class="center">
+      <a class="btn btn-primary zalo-link" href="https://zalo.me/0375487597" target="_blank" rel="noopener" data-i18n="lp.cta">Thích cách học này? Học thử miễn phí →</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>© <span id="year">2026</span> Ánh Mùa Hè · <span data-i18n="footer.tag">Tiếng Anh giao tiếp, không cần học thuộc.</span></span>
+    <a href="https://www.threads.com/@summer_english_2909" target="_blank" rel="noopener">Threads ↗</a>
+  </div>
+</footer>
+
+<a class="float-zalo zalo-link" href="https://zalo.me/0375487597" target="_blank" rel="noopener" aria-label="Zalo">Zalo</a>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
