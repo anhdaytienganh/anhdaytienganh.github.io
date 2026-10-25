@@ -1,0 +1,32 @@
+[
+ {
+  "mode": "redesign",
+  "depth": "full",
+  "scope": "site",
+  "shape": "Narrative Workflow",
+  "theme": "sticker",
+  "axes": "light/display-heavy/chromatic-magenta",
+  "hero": "Stage",
+  "nav": "slab",
+  "footer": "letter close",
+  "imagery": "photographs, the user's 1",
+  "photos": [],
+  "entry": "none",
+  "fingerprint": "narrative-workflow/stage/slab/letter",
+  "sections": [
+   "hero",
+   "facts",
+   "rows",
+   "steps",
+   "statement-band",
+   "contact"
+  ],
+  "signature": "Ánh's photo as a die-cut sticker, tagged with the free first class and CELTA",
+  "waived": [
+   "42",
+   "44c"
+  ],
+  "prompt": "English conversation teacher, book a free trial on Zalo, bilingual",
+  "date": "2026-10-25"
+ }
+]

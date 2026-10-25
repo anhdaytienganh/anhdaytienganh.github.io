@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title data-i18n="meta.title">Ánh dạy Tiếng Anh: Tiếng Anh giao tiếp A1–B2 online</title>
-  <meta name="description" content="Lớp tiếng Anh giao tiếp A1–B2 online, 1-1 hoặc nhóm nhỏ. Cử nhân Ngôn ngữ Anh USSH loại Giỏi, chứng chỉ CELTA, 5 năm kinh nghiệm. Học thử miễn phí.">
-  <meta name="theme-color" content="#FFC93C">
-  <meta property="og:title" content="Ánh dạy Tiếng Anh: Nói tiếng Anh không cần học thuộc">
-  <meta property="og:description" content="Tiếng Anh giao tiếp A1–B2 online · 1-1 hoặc nhóm nhỏ · CELTA · Học thử miễn phí">
+  <title data-i18n="meta.title">Ánh dạy Tiếng Anh: tiếng Anh giao tiếp online, A1 đến B2</title>
+  <meta name="description" content="Lớp tiếng Anh giao tiếp online từ A1 đến B2, 1-1 hoặc nhóm nhỏ. Cử nhân Ngôn ngữ Anh USSH loại Giỏi, chứng chỉ CELTA, 5 năm kinh nghiệm. Học thử miễn phí.">
+  <meta name="theme-color" content="#2B2722">
+  <meta property="og:title" content="Ánh dạy Tiếng Anh: nói tiếng Anh không cần học thuộc">
+  <meta property="og:description" content="Tiếng Anh giao tiếp online từ A1 đến B2, 1-1 hoặc nhóm nhỏ, chứng chỉ CELTA. Học thử miễn phí.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://anhdaytienganh.github.io/">
   <meta property="og:image" content="https://anhdaytienganh.github.io/assets/img/og.jpg">
@@ -15,18 +15,19 @@
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Patrick+Hand&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@800&family=Be+Vietnam+Pro:wght@400;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<a class="skip" href="#main" data-i18n="nav.skip">Bỏ qua menu</a>
 
 <header class="nav" id="nav">
   <div class="container nav-inner">
-    <a href="#top" class="logo"><span class="logo-sun" aria-hidden="true">☀️</span> Ánh Mùa Hè</a>
+    <a href="#top" class="wordmark" aria-label="Ánh Mùa Hè"><img src="assets/img/favicon.svg" alt="" width="32" height="32"><span>Ánh Mùa Hè</span></a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about" data-i18n="nav.about">Về Ánh</a></li>
       <li><a href="#process" data-i18n="nav.process">Lộ trình</a></li>
-      <li><a href="#reviews" data-i18n="nav.reviews">Review</a></li>
+      <li><a href="#reviews" data-i18n="nav.reviews">Học viên</a></li>
       <li><a href="#lectures" data-i18n="nav.lectures">Bài giảng</a></li>
       <li><a href="#contact" data-i18n="nav.contact">Liên hệ</a></li>
     </ul>
@@ -35,226 +36,179 @@
         <button type="button" data-lang="vi" aria-pressed="true">VI</button>
         <button type="button" data-lang="en" aria-pressed="false">EN</button>
       </div>
-      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+      <a class="nav-cta zalo-link" href="https://zalo.me/0375487597" target="_blank" rel="noopener" data-i18n="nav.cta">Học thử</a>
+      <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks" data-i18n="nav.menu">Menu</button>
     </div>
   </div>
 </header>
 
 <main id="top">
+  <span id="main"></span>
 
-  <!-- ===== HERO ===== -->
+  <!-- Hero -->
   <section class="hero">
     <div class="container hero-grid">
       <div>
-        <span class="eyebrow" data-i18n="hero.eyebrow">Xin chào, mình là Ánh 👋</span>
-        <h1 data-i18n="hero.title">Nói tiếng Anh<br><span class="hl">không cần học thuộc</span></h1>
-        <p class="hero-lead" data-i18n="hero.lead">Lớp tiếng Anh giao tiếp A1–B2 online, 1-1 hoặc nhóm nhỏ. Bạn nói, mình sửa, và cứ thế bạn tự tin dần lên. Dành cho sinh viên, dân IT, người đi làm và cả người mới bắt đầu ở mọi lứa tuổi.</p>
-        <div class="badges">
-          <span class="badge" data-i18n="hero.b1">🎓 Cử nhân NN Anh USSH, loại Giỏi</span>
-          <span class="badge">📜 CELTA</span>
-          <span class="badge" data-i18n="hero.b3">⏳ 5 năm kinh nghiệm</span>
-          <span class="badge" data-i18n="hero.b4">💻 100% online</span>
+        <h1 data-i18n="hero.title">Nói tiếng Anh không cần học thuộc</h1>
+        <p class="lead" data-i18n="hero.lead">Giao tiếp online từ A1 đến B2, học 1-1 hoặc nhóm nhỏ.</p>
+        <div class="actions">
+          <a class="btn btn--primary zalo-link" href="https://zalo.me/0375487597" target="_blank" rel="noopener" data-i18n="hero.cta1">Đặt lịch học thử</a>
+          <a class="btn" href="#process" data-i18n="hero.cta2">Xem lộ trình</a>
         </div>
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="#process" data-i18n="hero.cta1">Học thử miễn phí →</a>
-          <a class="btn btn-ghost zalo-link" href="https://zalo.me/0375487597" target="_blank" rel="noopener" data-i18n="hero.cta2">💬 Nhắn Zalo</a>
-        </div>
-        <p class="hero-note" data-i18n="hero.note">↳ Buổi học thử hoàn toàn miễn phí, không ràng buộc!</p>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <div class="sun-blob"></div>
-        <div class="photo-frame">
-          <img src="assets/img/anh.jpg" alt="Ánh, giáo viên tiếng Anh" width="720" height="720" fetchpriority="high">
-        </div>
-        <span class="sticker s1">Hello! 👋</span>
-        <span class="sticker s2">A1 → B2 🚀</span>
-        <span class="sticker s3" data-i18n="hero.sticker">No scripts ✌️</span>
+      <div class="hero-photo">
+        <span class="tag" data-i18n="hero.tag">Buổi đầu miễn phí</span>
+        <span class="tag tag--seal" data-i18n="hero.seal">Chứng chỉ CELTA</span>
+        <figure class="diecut" data-slot="hero" data-alt="Ánh, giáo viên tiếng Anh">
+          <img src="assets/img/anh-portrait.jpg" alt="Ánh đứng đọc một bức tường chữ trong phòng triển lãm" width="960" height="1200" fetchpriority="high">
+        </figure>
       </div>
     </div>
   </section>
 
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span>Speaking</span><span>Listening</span><span>Pronunciation</span><span>Small talk</span><span>Job interview</span><span>Daily stand-up</span><span>Travel</span><span>IPA</span>
-      <span>Speaking</span><span>Listening</span><span>Pronunciation</span><span>Small talk</span><span>Job interview</span><span>Daily stand-up</span><span>Travel</span><span>IPA</span>
-    </div>
-  </div>
-
-  <!-- ===== ABOUT ===== -->
+  <!-- About -->
   <section class="section" id="about">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow" data-i18n="about.eyebrow">về Ánh</span>
-        <h2 data-i18n="about.title">Giáo viên của bạn <span class="hl-sun">nói ít, nghe nhiều</span></h2>
+      <div class="head">
+        <h2 data-i18n="about.title">Giáo viên nói ít, nghe nhiều</h2>
       </div>
       <div class="about-grid">
-        <div class="card reveal">
-          <div class="about-story">
-            <p data-i18n="about.p1">Mình là Ánh, giáo viên tiếng Anh giao tiếp với 5 năm đứng lớp. Học trò của mình rất đa dạng: sinh viên chuẩn bị đi thực tập, dân IT cần họp với team nước ngoài, cô chú bắt đầu lại từ con số 0, cả những bạn ở nước ngoài học lúc 1 giờ sáng.</p>
-            <p data-i18n="about.p2">Mình tin rằng ai cũng nói được tiếng Anh, chỉ cần một lớp học đủ an toàn để dám nói sai.</p>
-            <p class="sign">Ánh ☀️</p>
-          </div>
-          <div class="creds">
-            <div class="cred"><div class="cred-icon">🎓</div><div><strong data-i18n="about.c1t">Cử nhân Ngôn ngữ Anh, loại Giỏi</strong><span data-i18n="about.c1d">ĐH KHXH&amp;NV (USSH)</span></div></div>
-            <div class="cred"><div class="cred-icon">📜</div><div><strong>CELTA</strong><span data-i18n="about.c2d">Chứng chỉ giảng dạy tiếng Anh quốc tế (Cambridge)</span></div></div>
-            <div class="cred"><div class="cred-icon">⏳</div><div><strong data-i18n="about.c3t">5 năm kinh nghiệm</strong><span data-i18n="about.c3d">Giảng dạy giao tiếp A1–B2</span></div></div>
-            <div class="cred"><div class="cred-icon">👥</div><div><strong data-i18n="about.c4t">1-1 hoặc nhóm nhỏ</strong><span data-i18n="about.c4d">Học online, lịch linh hoạt</span></div></div>
-          </div>
+        <div class="story">
+          <p data-i18n="about.p1">Mình là Ánh, giáo viên tiếng Anh giao tiếp. Học trò của mình rất đa dạng: sinh viên chuẩn bị đi thực tập, dân IT cần họp với team nước ngoài, cô chú bắt đầu lại từ con số 0, cả những bạn ở nước ngoài học lúc 1 giờ sáng.</p>
+          <p data-i18n="about.p2">Mình tin rằng ai cũng nói được tiếng Anh, chỉ cần một lớp học đủ an toàn để dám nói sai.</p>
+          <p class="sign">Ánh</p>
         </div>
-        <div class="principles">
-          <div class="principle reveal">
-            <div class="principle-num">1</div>
-            <div><h3 data-i18n="about.pr1t">Lấy học viên làm trung tâm</h3><p data-i18n="about.pr1d">Bạn nói nhiều hơn giáo viên. Mỗi buổi đều có lead-in, trò chơi từ vựng và thời gian để bạn tự khám phá trước khi được giải thích.</p></div>
-          </div>
-          <div class="principle reveal">
-            <div class="principle-num">2</div>
-            <div><h3 data-i18n="about.pr2t">Không học thuộc script</h3><p data-i18n="about.pr2d">Bạn tự nói bằng vốn từ của mình, mình sửa ngay tại chỗ. Nói sai không sao, nói sai mới tiến bộ.</p></div>
-          </div>
-          <div class="principle reveal">
-            <div class="principle-num">3</div>
-            <div><h3 data-i18n="about.pr3t">Chủ đề đời thật</h3><p data-i18n="about.pr3d">Giao thông, nhà hàng, họp online, phỏng vấn, du lịch… Học thứ bạn dùng được ngay ngày mai.</p></div>
-          </div>
-          <div class="principle reveal">
-            <div class="principle-num">4</div>
-            <div><h3 data-i18n="about.pr4t">Phát âm từ gốc</h3><p data-i18n="about.pr4d">Nền tảng IPA rõ ràng, sửa từng âm khó (như L/N) để bạn nói người khác hiểu ngay lần đầu.</p></div>
-          </div>
-        </div>
+        <dl class="creds">
+          <div class="cred diecut"><dt>5</dt><dd data-i18n="about.c3">năm dạy tiếng Anh giao tiếp</dd></div>
+          <div class="cred diecut"><dt>CELTA</dt><dd data-i18n="about.c2">Chứng chỉ giảng dạy tiếng Anh quốc tế của Cambridge</dd></div>
+          <div class="cred diecut"><dt>USSH</dt><dd data-i18n="about.c1">Cử nhân Ngôn ngữ Anh, loại Giỏi</dd></div>
+          <div class="cred diecut"><dt>1-1</dt><dd data-i18n="about.c4">hoặc nhóm nhỏ, học online, lịch linh hoạt</dd></div>
+        </dl>
       </div>
     </div>
   </section>
 
-  <!-- ===== PROCESS ===== -->
-  <section class="section process" id="process">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow" data-i18n="process.eyebrow">lộ trình học</span>
-        <h2 data-i18n="process.title">3 bước để bắt đầu</h2>
-        <p data-i18n="process.lead">Đơn giản, minh bạch, không ép đóng phí trước.</p>
-      </div>
-      <div class="steps">
-        <div class="card step reveal">
-          <div class="step-num">1</div>
-          <h3 data-i18n="process.s1t">Lớp học thử</h3>
-          <span class="tag" data-i18n="process.s1tag">MIỄN PHÍ</span>
-          <ul>
-            <li data-i18n="process.s1a">Trải nghiệm một buổi học thật, online</li>
-            <li data-i18n="process.s1b">Xem cách mình dạy có hợp với bạn không</li>
-            <li data-i18n="process.s1c">Không ràng buộc, không cần chuẩn bị gì</li>
-          </ul>
-        </div>
-        <div class="card step reveal">
-          <div class="step-num">2</div>
-          <h3 data-i18n="process.s2t">Kiểm tra trình độ</h3>
-          <span class="tag" data-i18n="process.s2tag">XẾP LỚP</span>
-          <ul>
-            <li data-i18n="process.s2a">Nói chuyện ngắn + bài kiểm tra nhẹ nhàng</li>
-            <li data-i18n="process.s2b">Xác định trình độ theo khung CEFR (A1–B2)</li>
-            <li data-i18n="process.s2c">Cùng đặt mục tiêu cụ thể cho bạn</li>
-          </ul>
-        </div>
-        <div class="card step reveal">
-          <div class="step-num">3</div>
-          <h3 data-i18n="process.s3t">Vào khoá học</h3>
-          <span class="tag" data-i18n="process.s3tag">1-1 / NHÓM NHỎ</span>
-          <ul>
-            <li data-i18n="process.s3a">Giáo trình theo trình độ (VD: Speak Out)</li>
-            <li data-i18n="process.s3b">Lịch học linh hoạt theo giờ của bạn</li>
-            <li data-i18n="process.s3c">Theo dõi tiến độ, nhận xét sau mỗi chặng</li>
-          </ul>
-        </div>
-      </div>
-      <div class="levels reveal" aria-label="CEFR levels">
-        <span class="level">A1</span><span class="arrow">→</span>
-        <span class="level">A2</span><span class="arrow">→</span>
-        <span class="level">B1</span><span class="arrow">→</span>
-        <span class="level">B2</span>
-      </div>
-      <div class="process-cta reveal">
-        <a class="btn btn-primary zalo-link" href="https://zalo.me/0375487597" target="_blank" rel="noopener" data-i18n="process.cta">Đăng ký học thử qua Zalo →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== AUDIENCE ===== -->
+  <!-- Who it's for -->
   <section class="section" id="for-you">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow" data-i18n="aud.eyebrow">dành cho ai?</span>
+    <div class="container for-grid">
+      <div class="head">
         <h2 data-i18n="aud.title">Lớp này dành cho bạn nếu…</h2>
       </div>
-      <div class="audience-grid">
-        <div class="card aud reveal">
-          <div class="aud-emoji">🎓</div>
-          <h3 data-i18n="aud.a1t">Bạn là sinh viên</h3>
-          <p data-i18n="aud.a1d">Cần tự tin nói cho thuyết trình, phỏng vấn thực tập, trao đổi sinh viên hay đơn giản là không còn "đứng hình" khi gặp người nước ngoài.</p>
-        </div>
-        <div class="card aud dev reveal">
-          <div class="prompt">$ whoami</div>
-          <h3 data-i18n="aud.a2t">dân_IT<span class="cursor"></span></h3>
-          <p data-i18n="aud.a2d">Đọc docs thì ổn, nhưng nói trong <code>daily stand-up</code>, demo hay họp với khách hàng thì <code>Exception</code>? Mình debug kỹ năng nói cho bạn.</p>
-        </div>
-        <div class="card aud reveal">
-          <div class="aud-emoji">🌱</div>
-          <h3 data-i18n="aud.a3t">Bạn bắt đầu từ con số 0</h3>
-          <p data-i18n="aud.a3d">Ở độ tuổi nào cũng được. Mình đi từ IPA, ngữ pháp cơ bản đến những câu dùng hằng ngày, chậm mà chắc.</p>
-        </div>
-        <div class="card aud reveal">
-          <div class="aud-emoji">✈️</div>
-          <h3 data-i18n="aud.a4t">Bạn sống/làm việc ở nước ngoài</h3>
-          <p data-i18n="aud.a4d">Lệch múi giờ? Không sao. Lịch học linh hoạt, kể cả giờ "khó đỡ" như 1 giờ sáng.</p>
-        </div>
-      </div>
+      <ul class="rows">
+        <li><h3 data-i18n="aud.a1t">Bạn là sinh viên</h3><p data-i18n="aud.a1d">Cần tự tin khi thuyết trình, phỏng vấn thực tập, trao đổi sinh viên, hay đơn giản là không còn “đứng hình” khi gặp người nước ngoài.</p></li>
+        <li><h3 data-i18n="aud.a2t">Bạn là dân IT</h3><p data-i18n="aud.a2d">Đọc docs thì ổn, nhưng nói trong <code>daily stand-up</code>, demo hay họp với khách hàng thì gặp <code>Exception</code>? Mình cùng debug kỹ năng nói.</p></li>
+        <li><h3 data-i18n="aud.a3t">Bạn bắt đầu từ con số 0</h3><p data-i18n="aud.a3d">Ở độ tuổi nào cũng được. Mình đi từ IPA, ngữ pháp cơ bản đến những câu dùng hằng ngày, chậm mà chắc.</p></li>
+        <li><h3 data-i18n="aud.a4t">Bạn sống ở nước ngoài</h3><p data-i18n="aud.a4d">Lệch múi giờ không sao. Lịch học linh hoạt, kể cả những giờ “khó đỡ” như 1 giờ sáng.</p></li>
+      </ul>
     </div>
   </section>
 
-  <!-- ===== REVIEWS ===== -->
-  <section class="section reviews" id="reviews">
+  <!-- Process: the three stages -->
+  <section class="section process" id="process">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow" data-i18n="rev.eyebrow">học viên nói gì</span>
-        <h2 data-i18n="rev.title">Review thật từ học trò</h2>
+      <div class="head">
+        <h2 data-i18n="process.title">3 bước để bắt đầu</h2>
+        <p class="lead" data-i18n="process.lead">Đơn giản, minh bạch, không ép đóng phí trước.</p>
       </div>
-      <div class="review-track" id="reviewTrack"></div>
-      <p class="scroll-hint" data-i18n="rev.hint">← vuốt để xem thêm →</p>
-    </div>
-  </section>
-
-  <!-- ===== LECTURES ===== -->
-  <section class="section" id="lectures">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow" data-i18n="lec.eyebrow">bài giảng</span>
-        <h2 data-i18n="lec.title">Học thử vài bài gần đây</h2>
-        <p data-i18n="lec.lead">Một phần nhỏ từ các buổi học, được chia sẻ trên Threads.</p>
-      </div>
-      <div class="lecture-grid" id="latestLectures"></div>
-      <div class="center">
-        <a class="btn btn-ghost" href="lectures.html" data-i18n="lec.all">📚 Xem tất cả bài giảng</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT ===== -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow" style="color:var(--sun)" data-i18n="contact.eyebrow">liên hệ</span>
-        <h2 data-i18n="contact.title">Sẵn sàng nói tiếng Anh chưa?</h2>
-        <p data-i18n="contact.lead">Nhắn Zalo để đặt lịch học thử miễn phí. Mình thường trả lời trong ngày.</p>
-      </div>
-      <div class="contact-grid">
-        <div class="card contact-card reveal">
-          <ul class="contact-list">
-            <li><span class="ci">💬</span><div><strong>Zalo</strong><a class="phone zalo-link" href="https://zalo.me/0375487597" target="_blank" rel="noopener">0375 487 597</a></div></li>
-            <li><span class="ci">🧵</span><div><strong>Threads</strong><a href="https://www.threads.com/@summer_english_2909" target="_blank" rel="noopener">@summer_english_2909</a></div></li>
-            <li><span class="ci">💻</span><div><strong data-i18n="contact.formatT">Hình thức</strong><span data-i18n="contact.formatD">Online 100% · 1-1 hoặc nhóm nhỏ</span></div></li>
-            <li><span class="ci">📈</span><div><strong data-i18n="contact.levelT">Trình độ</strong><span data-i18n="contact.levelD">Giao tiếp A1 – B2</span></div></li>
+      <ol class="stages">
+        <li class="stage">
+          <div class="stage-text">
+            <h3 data-i18n="process.s1t">Lớp học thử</h3>
+            <span class="tag" data-i18n="process.s1tag">Miễn phí</span>
+            <ul>
+              <li data-i18n="process.s1a">Trải nghiệm một buổi học thật, online</li>
+              <li data-i18n="process.s1b">Xem cách mình dạy có hợp với bạn không</li>
+              <li data-i18n="process.s1c">Không ràng buộc, không cần chuẩn bị gì</li>
+            </ul>
+          </div>
+          <ul class="principles">
+            <li class="diecut"><h4 data-i18n="about.pr1t">Lấy học viên làm trung tâm</h4><p data-i18n="about.pr1d">Bạn nói nhiều hơn giáo viên, với lead-in và trò chơi từ vựng.</p></li>
+            <li class="diecut"><h4 data-i18n="about.pr2t">Không học thuộc script</h4><p data-i18n="about.pr2d">Bạn tự nói bằng vốn từ của mình, mình sửa ngay tại chỗ.</p></li>
+            <li class="diecut"><h4 data-i18n="about.pr3t">Chủ đề đời thật</h4><p data-i18n="about.pr3d">Giao thông, nhà hàng, họp online, phỏng vấn, du lịch.</p></li>
+            <li class="diecut"><h4 data-i18n="about.pr4t">Phát âm từ gốc</h4><p data-i18n="about.pr4d">Nền tảng IPA, sửa từng âm khó như L và N.</p></li>
           </ul>
-          <a class="btn btn-zalo zalo-link" href="https://zalo.me/0375487597" target="_blank" rel="noopener" data-i18n="contact.cta">Nhắn Zalo ngay</a>
+        </li>
+        <li class="stage">
+          <div class="stage-text">
+            <h3 data-i18n="process.s2t">Kiểm tra trình độ</h3>
+            <span class="tag" data-i18n="process.s2tag">Xếp lớp</span>
+            <ul>
+              <li data-i18n="process.s2a">Nói chuyện ngắn và một bài kiểm tra nhẹ nhàng</li>
+              <li data-i18n="process.s2b">Xác định trình độ theo khung CEFR</li>
+              <li data-i18n="process.s2c">Cùng đặt mục tiêu cụ thể cho bạn</li>
+            </ul>
+          </div>
+          <ol class="ladder" aria-label="CEFR: A1, A2, B1, B2">
+            <li class="diecut">A1</li>
+            <li class="diecut">A2</li>
+            <li class="diecut">B1</li>
+            <li class="diecut">B2</li>
+          </ol>
+        </li>
+        <li class="stage stage--wide" id="lectures">
+          <div class="stage-text">
+            <h3 data-i18n="process.s3t">Vào khoá học</h3>
+            <span class="tag" data-i18n="process.s3tag">1-1 hoặc nhóm nhỏ</span>
+            <ul>
+              <li data-i18n="process.s3a">Giáo trình theo trình độ, ví dụ Speak Out</li>
+              <li data-i18n="process.s3b">Lịch học linh hoạt theo giờ của bạn</li>
+              <li data-i18n="process.s3c">Theo dõi tiến độ, nhận xét sau mỗi chặng</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="lessons" id="latestLectures" aria-label="Bài giảng gần đây"></ul>
+            <p class="lessons-foot"><a class="btn" href="lectures.html" data-i18n="lec.all">Xem tất cả bài giảng</a></p>
+          </div>
+        </li>
+      </ol>
+      <div class="process-close">
+        <p data-i18n="process.closeLine">Bắt đầu từ bước 1, miễn phí.</p>
+        <a class="btn btn--primary zalo-link" href="https://zalo.me/0375487597" target="_blank" rel="noopener" data-i18n="process.cta">Đăng ký học thử qua Zalo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stories from class -->
+  <section class="section stories" id="reviews">
+    <div class="container">
+      <div class="statement-wrap">
+        <h2 class="statement" data-i18n="rev.statement">Có hôm học lúc 1 giờ sáng.</h2>
+        <span class="tag" data-i18n="rev.tag">Học viên làm việc ở Đức</span>
+      </div>
+      <ul class="story-rows">
+        <li><strong data-i18n="rev.s1t">Từ con số 0 đến gần hết Speak Out A1</strong><span data-i18n="rev.s1d">Ba tháng học 1-1: IPA, ngữ pháp cơ bản, gọi món ở nhà hàng.</span></li>
+        <li><strong data-i18n="rev.s2t">Sửa âm L và N</strong><span data-i18n="rev.s2d">Học viên ở Đức, học xen giữa ca làm, đôi khi lúc 1 giờ sáng.</span></li>
+        <li><strong data-i18n="rev.s3t">Thuyết minh ngay tại di tích</strong><span data-i18n="rev.s3d">Sinh viên Du lịch đi fieldtrip chùa và hội quán ở TP.HCM.</span></li>
+      </ul>
+      <div class="review-track" id="reviewTrack"></div>
+      <div class="stories-foot">
+        <!-- Real reviews go in assets/js/data.js (REVIEWS); they render into #reviewTrack above. -->
+        <a href="https://www.threads.com/@summer_english_2909" target="_blank" rel="noopener" data-i18n="rev.more">Đọc thêm trên Threads</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact: the booking again -->
+  <section class="section" id="contact">
+    <div class="container contact-grid">
+      <div class="head contact-head">
+        <h2 data-i18n="contact.title">Sẵn sàng nói tiếng Anh chưa?</h2>
+        <p class="lead" data-i18n="contact.lead">Nhắn Zalo để đặt lịch học thử miễn phí. Mình thường trả lời trong ngày.</p>
+        <dl class="contact-facts">
+          <div><dt data-i18n="contact.formatT">Hình thức</dt><dd data-i18n="contact.formatD">Online, 1-1 hoặc nhóm nhỏ</dd></div>
+          <div><dt data-i18n="contact.levelT">Trình độ</dt><dd data-i18n="contact.levelD">Giao tiếp, từ A1 đến B2</dd></div>
+          <div><dt>Threads</dt><dd><a href="https://www.threads.com/@summer_english_2909" target="_blank" rel="noopener">@summer_english_2909</a></dd></div>
+        </dl>
+      </div>
+      <div class="contact-cards">
+        <div class="zalo-card diecut">
+          <span>Zalo</span>
+          <a class="phone zalo-link" href="https://zalo.me/0375487597" target="_blank" rel="noopener">0375 487 597</a>
+          <a class="btn btn--light zalo-link" href="https://zalo.me/0375487597" target="_blank" rel="noopener" data-i18n="contact.cta">Nhắn Zalo ngay</a>
         </div>
-        <div class="card qr-card reveal">
-          <div class="qr-box" id="qr" aria-label="QR Zalo"></div>
-          <strong data-i18n="contact.qr">Quét mã để mở Zalo</strong>
+        <div class="qr-card diecut">
+          <div class="qr-box" id="qr" role="img" aria-label="QR Zalo 0375 487 597"></div>
+          <span data-i18n="contact.qr">Quét mã để mở Zalo</span>
         </div>
       </div>
     </div>
@@ -262,16 +216,28 @@
 </main>
 
 <footer class="footer">
-  <div class="container footer-inner">
-    <span>© <span id="year">2026</span> Ánh Mùa Hè · <span data-i18n="footer.tag">Tiếng Anh giao tiếp, không cần học thuộc.</span></span>
-    <a href="https://www.threads.com/@summer_english_2909" target="_blank" rel="noopener">Threads ↗</a>
+  <div class="container">
+    <div class="letter">
+      <p data-i18n="footer.letter">Hẹn gặp bạn ở buổi học thử.</p>
+      <p class="sign">Ánh</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="#about" data-i18n="nav.about">Về Ánh</a></li>
+      <li><a href="#process" data-i18n="nav.process">Lộ trình</a></li>
+      <li><a href="lectures.html" data-i18n="nav.archive">Kho bài giảng</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Liên hệ</a></li>
+      <li><a href="https://www.threads.com/@summer_english_2909" target="_blank" rel="noopener">Threads</a></li>
+    </ul>
+    <small>© <span id="year">2026</span> Ánh Mùa Hè. <span data-i18n="footer.tag">Tiếng Anh giao tiếp, không cần học thuộc.</span></small>
   </div>
 </footer>
 
-<a class="float-zalo zalo-link" href="https://zalo.me/0375487597" target="_blank" rel="noopener" aria-label="Zalo">Zalo</a>
+<a class="float-zalo zalo-link" href="https://zalo.me/0375487597" target="_blank" rel="noopener" aria-label="Nhắn Zalo">Zalo</a>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script src="assets/js/data.js"></script>
 <script src="assets/js/main.js"></script>
+<script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
 </body>
 </html>

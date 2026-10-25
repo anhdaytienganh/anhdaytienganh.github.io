@@ -6,11 +6,12 @@ Trang giới thiệu lớp tiếng Anh giao tiếp của Ánh (song ngữ Việt
 
 | Muốn sửa | Mở file |
 |---|---|
-| Review học viên, bài giảng | `assets/js/data.js` (copy một khối `{ ... }` rồi sửa; xoá `sample: true` khi đã là nội dung thật) |
+| Review học viên, bài giảng | `assets/js/data.js` (copy một khối `{ ... }` rồi sửa; mục có `sample: true` là mẫu và **không hiện** trên trang, xoá dòng đó khi đã là nội dung thật; chỉ đăng review thật, có sự đồng ý của học viên) |
 | Chữ tiếng Việt trên trang | `index.html`, `lectures.html` |
 | Bản dịch tiếng Anh | `assets/js/main.js` (object `EN`, theo key `data-i18n`) |
-| Màu sắc, giao diện | `assets/css/style.css` (biến ở đầu file) |
-| Ảnh đại diện | Thêm `assets/img/anh.jpg`, rồi trong `index.html` thay `<span class="initial">Á</span>` bằng `<img src="assets/img/anh.jpg" alt="Ánh">` |
+| Giao diện | `assets/css/style.css` (các dòng `/* Hallmark … */` ở đầu file ghi lại các quyết định thiết kế) |
+| Ảnh đại diện | Thay file `assets/img/anh-portrait.jpg` (ảnh dọc, tỉ lệ 4:5, khoảng 960 x 1200) |
+| Màu, font, khoảng cách | `assets/css/tokens.css`; mọi font phải hỗ trợ tiếng Việt |
 
 ## Xem thử trên máy
 

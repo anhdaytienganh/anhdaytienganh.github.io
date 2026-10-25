@@ -5,80 +5,34 @@
  *  Thêm review hoặc bài giảng mới: copy một khối { ... } rồi sửa chữ.
  *  To add a review or lecture: copy one { ... } block and edit the text.
  *
- *  sample: true  -> hiện nhãn "Mẫu / Sample". Xoá dòng này khi đã là nội dung thật.
- *                   shows a "Sample" tag. Remove the line once the content is real.
+ *  sample: true  -> mục mẫu, KHÔNG hiện trên trang. Xoá dòng này khi đã là nội dung thật.
+ *                   a template entry, NOT shown on the page. Remove the line once it is real.
  */
 
+/*
+ *  Chỉ thêm review thật, có sự đồng ý của học viên.
+ *  Only add real reviews, with the student's permission. Template:
+ *
+ *  {
+ *    name: "Tên học viên / Student name",
+ *    role: { vi: "Sinh viên, A2 lên B1", en: "Student, A2 to B1" },
+ *    text: { vi: "Lời review bằng tiếng Việt", en: "The review in English" }
+ *  },
+ */
 window.REVIEWS = [
-  {
-    sample: true,
-    name: "Minh Anh",
-    initial: "M",
-    color: "#FFC93C",
-    role: { vi: "Sinh viên năm 3 · A2 → B1", en: "3rd-year student · A2 → B1" },
-    text: {
-      vi: "Trước đây mình sợ nói lắm, toàn học thuộc rồi quên. Học với cô Ánh thì được nói thật, sai thì cô sửa ngay, giờ mình dám nói trong lớp rồi :))",
-      en: "I used to be scared of speaking. I memorised everything and then forgot it. With Ánh I actually get to talk, she corrects me on the spot, and now I speak up in class :))"
-    }
-  },
-  {
-    sample: true,
-    name: "Hoàng Long",
-    initial: "H",
-    color: "#7CF2C2",
-    role: { vi: "Backend Developer · B1", en: "Backend Developer · B1" },
-    text: {
-      vi: "Mình cần nói trong daily stand-up với team nước ngoài. Cô cho mình tập đúng những tình huống đó: báo cáo task, hỏi lại khi không hiểu, small talk. Rất thực tế.",
-      en: "I needed to speak in daily stand-ups with an overseas team. Ánh had me practise exactly those situations: reporting tasks, asking for clarification, small talk. Very practical."
-    }
-  },
-  {
-    sample: true,
-    name: "Chị Thu",
-    initial: "T",
-    color: "#FF7A59",
-    role: { vi: "Kế toán · bắt đầu từ con số 0", en: "Accountant · started from zero" },
-    text: {
-      vi: "Hơn 40 tuổi mới học lại tiếng Anh, chị cứ nghĩ không theo nổi. Sau 3 tháng chị đã tự gọi món và hỏi đường được khi đi du lịch.",
-      en: "I came back to English in my 40s and thought I couldn't keep up. After 3 months I could order food and ask for directions on my own while travelling."
-    }
-  },
-  {
-    sample: true,
-    name: "Quang",
-    initial: "Q",
-    color: "#D6E4FF",
-    role: { vi: "Đang làm việc tại Đức · A1", en: "Working in Germany · A1" },
-    text: {
-      vi: "Lịch làm của mình lệch múi giờ, có hôm học lúc 1 giờ sáng mà cô vẫn nhiệt tình. Phát âm L và N của mình đã đỡ hơn nhiều.",
-      en: "My work schedule is in a different time zone. Some days we had class at 1 a.m. and she was still full of energy. My L and N sounds are much better now."
-    }
-  },
-  {
-    sample: true,
-    name: "Bảo Ngọc",
-    initial: "B",
-    color: "#C8F0D8",
-    role: { vi: "Sinh viên Du lịch · B1", en: "Tourism student · B1" },
-    text: {
-      vi: "Buổi fieldtrip đi chùa và hội quán là buổi học vui nhất! Mình học được cách thuyết minh bằng tiếng Anh ngay tại chỗ.",
-      en: "The field trip to the pagoda and assembly hall was the most fun lesson! I learned how to give a guided commentary in English right on the spot."
-    }
-  }
 ];
 
 /*
  *  level: "A1" | "A2" | "B1" | "B2"
  *  topic: một trong các key của LECTURE_TOPICS bên dưới / one of the LECTURE_TOPICS keys below
- *  emoji: (tuỳ chọn / optional) icon riêng cho bài, mặc định theo chủ đề
  *  link:  link bài đăng Threads, video, slide... / link to the Threads post, video, slides...
  */
 window.LECTURE_TOPICS = {
-  daily:   { vi: "Đời sống",      en: "Daily life", emoji: "🛵", color: "#FFE3D9" },
-  travel:  { vi: "Du lịch",       en: "Travel",     emoji: "🏯", color: "#C8F0D8" },
-  work:    { vi: "Công việc & IT", en: "Work & IT",  emoji: "💻", color: "#D6E4FF" },
-  basics:  { vi: "Nền tảng",      en: "Foundations", emoji: "🔤", color: "#FFF1C2" },
-  skills:  { vi: "Kỹ năng",       en: "Skills",     emoji: "🎧", color: "#FFC93C" }
+  daily:   { vi: "Đời sống",      en: "Daily life" },
+  travel:  { vi: "Du lịch",       en: "Travel" },
+  work:    { vi: "Công việc & IT", en: "Work & IT" },
+  basics:  { vi: "Nền tảng",      en: "Foundations" },
+  skills:  { vi: "Kỹ năng",       en: "Skills" }
 };
 
 window.LECTURES = [
@@ -86,7 +40,6 @@ window.LECTURES = [
     date: "2026-10-25",
     level: "A1",
     topic: "daily",
-    emoji: "🍜",
     title: { vi: "Đi nhà hàng: gọi món & thanh toán", en: "At the restaurant: ordering & paying" },
     summary: {
       vi: "Từ vựng nhà hàng, mẫu câu gọi món và luyện nói không cần script: học viên tự nói, cô sửa.",
